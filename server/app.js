@@ -6,7 +6,7 @@ require("dotenv").config();
 
 // middleware
 const corOptions = {
-    origin:"http://localhost:3000/"
+    origin:"https://fabulous-axolotl-00b892.netlify.app/"
 }
 app.use(express.json())
 app.use(cors())
@@ -23,5 +23,5 @@ mongoose.connect(process.env.MONGODB_URI).then(()=>{
 })
 
 app.get("/",(req,res)=>{
-    res.status(201).json({message:"Connected to backend !"})
+    res.status(201).json({message:"Connected to backend successfully !"})
 })
