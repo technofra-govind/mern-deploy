@@ -8,7 +8,7 @@ require("dotenv").config();
 
 // middleware
 const corOptions = {
-    origin:"https://fabulous-axolotl-00b892.netlify.app/"
+    origin:"https://relaxed-clafoutis-68f476.netlify.app/"
 }
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
