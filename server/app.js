@@ -8,13 +8,13 @@ require("dotenv").config();
 
 // middleware
 const corOptions = {
-    origin:"https://dashing-meerkat-8d0123.netlify.app/"
+    origin:"https://dashing-meerkat-8d0123.netlify.app"
 }
-app.use(cors());
+app.use(cors(corOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); 
 
-// app.use(express.json())
+// app.use(express.json()) 
 // app.use(cors())
 
 
