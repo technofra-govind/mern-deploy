@@ -8,7 +8,7 @@ require("dotenv").config();
 
 // middleware
 const corOptions = {
-    origin:"https://dashing-meerkat-8d0123.netlify.app"
+    origin:"https://technofra.co.in/"
 }
 app.use(cors(corOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,8 +16,6 @@ app.use(bodyParser.json());
 
 // app.use(express.json()) 
 // app.use(cors())
-
-
 // Connect mongoDB
 mongoose.connect(process.env.MONGODB_URI).then(()=>{
     const PORT = process.env.PORT || 8000
